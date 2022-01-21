@@ -1,0 +1,24 @@
+diff --git a/node_modules/@react-navigation/bottom-tabs/src/views/BottomTabView.tsx b/node_modules/@react-navigation/bottom-tabs/src/views/BottomTabView.tsx
+index 63a0895..8b151af 100644
+--- a/node_modules/@react-navigation/bottom-tabs/src/views/BottomTabView.tsx
++++ b/node_modules/@react-navigation/bottom-tabs/src/views/BottomTabView.tsx
+@@ -91,6 +91,7 @@ export default function BottomTabView(props: Props) {
+   return (
+     <SafeAreaProviderCompat>
+       <MaybeScreenContainer
++        hasTwoStates
+         enabled={detachInactiveScreens}
+         style={styles.container}
+       >
+diff --git a/node_modules/@react-navigation/bottom-tabs/src/views/ScreenFallback.tsx b/node_modules/@react-navigation/bottom-tabs/src/views/ScreenFallback.tsx
+index 36789cf..2ef09b8 100644
+--- a/node_modules/@react-navigation/bottom-tabs/src/views/ScreenFallback.tsx
++++ b/node_modules/@react-navigation/bottom-tabs/src/views/ScreenFallback.tsx
+@@ -21,6 +21,7 @@ export const MaybeScreenContainer = ({
+   enabled,
+   ...rest
+ }: ViewProps & {
++  hasTwoStates: boolean;
+   enabled: boolean;
+   children: React.ReactNode;
+ }) => {
