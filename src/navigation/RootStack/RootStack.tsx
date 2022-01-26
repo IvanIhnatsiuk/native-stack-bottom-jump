@@ -1,7 +1,7 @@
-import React, { useMemo } from "react";
+import React from "react";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import TabsNav from "@navigation/BottomTabNav";
+import TabsNav from "../BottomTabNav";
 
 const Stack = createNativeStackNavigator();
 

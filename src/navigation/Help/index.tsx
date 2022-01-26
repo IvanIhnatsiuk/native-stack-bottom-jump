@@ -9,7 +9,10 @@ const HelpStack = () => (
   <Stack.Navigator>
     <Stack.Screen
       name="Stack 1"
-      options={{ headerStyle: { backgroundColor: "red" } }}
+      options={{
+        headerStyle: { backgroundColor: "red" },
+        contentStyle: { backgroundColor: "green" },
+      }}
       component={HelpScreen}
     />
   </Stack.Navigator>

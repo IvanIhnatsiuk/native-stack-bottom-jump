@@ -6,7 +6,12 @@ const Stack = createNativeStackNavigator();
 const HomeScreen = () => <></>;
 
 const HomeStack = () => (
-  <Stack.Navigator screenOptions={{ headerStyle: { backgroundColor: "red" } }}>
+  <Stack.Navigator
+    screenOptions={{
+      headerStyle: { backgroundColor: "red" },
+      contentStyle: { backgroundColor: "green" },
+    }}
+  >
     <Stack.Screen
       name="Stack 2"
       options={{

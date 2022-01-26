@@ -1,5 +1,5 @@
-import HelpStack from "@navigation/Help";
-import HomeStack from "@navigation/Home";
+import HelpStack from "../Help";
+import HomeStack from "../Home";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import React from "react";
 
